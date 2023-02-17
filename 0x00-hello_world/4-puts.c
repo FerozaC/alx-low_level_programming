@@ -2,8 +2,7 @@
 
  /**
  * main - prints "Programming is like building a multiligual puzzle"
- * Return: ALways 0 (Success)
- */	
+ * Return: ALways 0 (Success) */	
 
 	int main(void)
 {
