@@ -1,8 +1,7 @@
 #include <stdio.h>
 
  /**
- * *main - prints "Programming is like building a multiligual puzzle"
- * 
+ * main - prints "Programming is like building a multiligual puzzle"
  * Return: ALways 0 (Success)
  */	
 
