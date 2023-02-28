@@ -4,21 +4,21 @@
  * rev_string - reverses a string
  * @str: string to be processed
  */
-void rev_string(char *s)
+void rev_string(char *str)
 {
 
-	char rev_string = s[0];
+	char rev = str[0];
 	int counter = 0;
 	int i;
 
-	while (s[counter] != '\0')
+	while (str[counter] != '\0')
 	counter++;
 	for (i = 0; i < counter; i++)
 	{
 		counter--;
-		rev = s[i];
-		s[i] = s[counter];
-		s[counter] = rev;
+		rev = str[i];
+		str[i] = str[counter];
+		str[counter] = rev;
 	}
 }
 
