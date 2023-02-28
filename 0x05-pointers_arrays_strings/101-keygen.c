@@ -10,7 +10,10 @@
  */
 int main(void)
 {
-	sum = 0;
+	int pass[100];
+	int i, sum, n;
+
+	sum = 0;	
 
 	srand(time(NULL));
 
@@ -30,4 +33,3 @@ int main(void)
 
 	return (0);
 }
-
