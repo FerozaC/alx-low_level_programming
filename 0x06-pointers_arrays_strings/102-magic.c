@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+* main - Adds one line to cod
+*
+* Return: 0
+*/
 int main(void)
 {
 int n;
