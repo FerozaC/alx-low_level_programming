@@ -13,7 +13,7 @@
 
 		if (alphabet != 'e' && alphabet != 'q')
 			putchar(alphabet);
-	
+
 
 	putchar('\n');
 
