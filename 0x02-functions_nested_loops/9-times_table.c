@@ -1,10 +1,10 @@
-include "main.h"
+#include "main.h"
 
 
 /**
 *times_table -> time table printing
 */
-void times_table(void)
+	void times_table(void)
 	{
 		int i, j, k;
 
@@ -37,6 +37,4 @@ void times_table(void)
 			_putchar('\n');
 		}
 	}
-
-
 
