@@ -1,36 +1,26 @@
 #include "3-calc.h"
-
+#include <stdlib.h>
 /**
- * main - Entry point of program
- *
- * @argc: arguement count
- * @argv: arguement vector
- *
- * Return: 0 (success)
- *
- */
-int main(int argc, char *argv[])
+* get_op_func - Selects the correct function to perform
+*               the operation asked by the user.
+* @s: The operator passed as argument.
+*
+* Return: A pointer to the function corresponding
+*         to the operator given as a parameter.
+*/
+int (*get_op_func(char *s))(int, int)
 {
-	int (*func)(int, int);
-	int num1, num2;
-
-	if (argc != 4)
-	{
-		printf("Error\n"), exit(98);
-	}
-
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	func = get_op_func(argv[2]);
-
-	if (!func)
-	{
-		printf("Error\n"), exit(99);
-	}
-	if ((argv[2][0] == '/' || argv[2][0] == '%') && atoi(argv[3]) == 0)
-	{
-		printf("Error\n"), exit(100);
-	}
-	printf("%d\n", func(num1, num2));
-	return (0);
+op_t ops[] = {
+{"+", op_add},
+{"-", op_sub},
+{"*", op_mul},
+{"/", op_div},
+{"%", op_mod},
+{NULL, NULL},
+};
+int i = 0;
+while (ops[i].op != NULL && *(ops[i].op) != *s)
+i++;
+return (ops[i].f);
 }
+
