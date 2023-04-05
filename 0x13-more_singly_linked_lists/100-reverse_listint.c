@@ -17,6 +17,5 @@ prev = curt;
 curt = next;
 }
 *head = prev;
-
- return (*head);
+return (*head);
 }
