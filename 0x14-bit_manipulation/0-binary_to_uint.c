@@ -16,7 +16,7 @@ char c;
 if (!b)
 return (0);
 
-for (i = 0; b[i]; i++) 
+for (i = 0; b[i]; i++)
 {
 c = b[i];
 if (c < '0' || c > '1')
